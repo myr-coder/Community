@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+    font-family: Futura, sans-serif;
+  }
+  
+@font-face {
+    font-family: Masheen;
+    src: url(Masheen\ Bold.ttf);
+}
+
+body {
+  background-image: url('doodle-11.png');
+  z-index: 4;
+}
+
+body{
+background: #fe9b9b;
+font-weight: 400;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+#wrapper{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading{
+  display:block;
+  position:fixed;
+    padding-bottom: 580px;
+
+  
+}
+.heading p{
+  font-family: Masheen;
+  letter-spacing: 5px;
+  font-size: 1.1em;
+  color:#224C8C;
+  text-align: center;
+}
+
+.heading img{
+  width: 33%;
+}
+
+.quote-box {
+  border-radius: 5px;
+  position:sticky;
+  width: 600px; 
+  padding: 20px 20px;
+  padding-right: 5px;
+  display: table;
+  margin: 20% auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: right; 
+  background-image: url("paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover ;
+ 
+
+  }
+
+.quotes{
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center; 
+    padding: 0 105px;
+    color: rgb(22, 22, 22);
+ 
+}
+
+.quotes p, .quotes h3{
+font-size: 1.65rem;
+}
+
+.quotes h3{
+  line-height: 35px;
+}
+
+.quotes img{
+  max-width: 30%;
+  padding-bottom: 2px;
+}
+
+
+.quote-box #author {
+    width: 500px;
+    height: auto;
+    clear: both;
+    padding-top: 2.5px;
+    font-size: 1.24em;
+    text-align: right;
+  }
+
+  .quote-box .buttons .gen-button {
+    float: right;
+    font-size: 1.4rem;
+    font-family: Masheen;
+    letter-spacing: 5px;
+    border: black solid 3px;
+    border-radius: 9px;
+  }
+
+  .btn{
+    background-color: #224C8C;
+    color: #fff;
+    
+  
+  }
+
+  .btn:hover{
+    background-color: #3A5E97;
+    color: #fff;
+  }
+  
+.quote-box .buttons {
+    width: 500px;
+    margin: auto;
+    display: block;
+    align-content: left;
+    z-index: 10;
+    
+}
+
+.quote-box .buttons .button {
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #224C8C;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 25px 6px 18px;
+    margin-top: 0px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .quote-box .buttons .button:hover {
+    opacity: 0.9;
+  }
+  .quote-box .buttons .button#tweet-quote,
+  .quote-box .buttons .button#tumblr-quote {
+    float: left;
+    padding: 0px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 7px;
+    height: 45px;
+    width: 45px;
+    border: black solid 3px;
+    border-radius: 9px;
+  }
+
+
+/* CHARACTER SHEET */ 
+  
+.info{
+  position:fixed;
+ transform: translateY(440%); /* Position of Character buttons*/
+  display: flex;
+  
+}
+
+
+.info #info:hover {
+    transform: rotate(360deg);
+  }
+
+  .info img {
+      width: 70px;
+      height: 70px;
+  }
+
+
+  
+/*  FOOTER  */ 
+  .footer {
+    width: 450px;
+    text-align: center;
+    display: block;
+    margin: 15px auto 30px auto;
+    font-size: 0.8em;
+    color: #224C8C;
+
+  }
+  .footer a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #224C8C;
+  }
+
+@media (max-width: 480px){
+    .quotes p, .quotes h3{
+        font-size: 1rem;
+        }  
+}
